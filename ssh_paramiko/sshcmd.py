@@ -39,6 +39,6 @@ def ssh_command(ip, user, passwd, cmd):
     return
 
 
-ssh_command('127.0.0.1', 'unknown', 'nolerdifwere', 'ClientConnected')
+ssh_command('127.0.0.1', 'username', 'passwd', 'ClientConnected')
 
 

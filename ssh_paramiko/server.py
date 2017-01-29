@@ -24,7 +24,7 @@ class Server(paramiko.ServerInterface):
 
 
     def check_auth_password(self, user, passwd):
-        if (user == 'unknown') and (passwd == 'nolerdifwere'):
+        if (user == 'username') and (passwd == 'passwd'):
             return paramiko.AUTH_SUCCESSFUL
 
         return paramiko.AUTH_FAILED
