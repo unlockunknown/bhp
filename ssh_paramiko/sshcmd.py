@@ -13,7 +13,7 @@ logging.basicConfig()
 def ssh_command(ip, user, passwd, cmd):
     client = paramiko.SSHClient()
 
-#    client.load_host_keys('/home/unknown/.ssh/known_hosts')
+    #client.load_host_keys('/home/unknown/.ssh/known_hosts')
     client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
     client.connect(ip, username=user, password=passwd)
     
