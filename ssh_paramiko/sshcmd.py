@@ -4,10 +4,11 @@
 import threading
 import paramiko
 import subprocess
-
 import logging
 
+
 logging.basicConfig()
+
 
 def ssh_command(ip, user, passwd, cmd):
     client = paramiko.SSHClient()
